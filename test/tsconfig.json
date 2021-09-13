@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "module": "es2020",
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["*.ts"]
+}

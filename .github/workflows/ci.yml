@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - "v*" # older version branches
+    tags:
+      - "*"
+  pull_request: {}
+  schedule:
+    - cron: "0 6 * * 0" # weekly, on sundays
+
+jobs:
+  test:
+    name: "Node ${{ matrix.node }} - ${{ matrix.os }}"
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node: ["latest"]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install Dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm test
