@@ -4,6 +4,7 @@
 
 - [Node.js](https://nodejs.org/): A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [TypeScript](https://www.typescriptlang.org/): JavaScript with syntax for types.
+- [rollup.js](https://rollupjs.org/): Next-generation ES module bundler.
 - [ESLint](https://eslint.org/): Pluggable JavaScript linter.
 - [Prettier](https://prettier.io/): An opinionated code formatter.
 - [Nodemon](https://nodemon.io/): Reload, automatically.
