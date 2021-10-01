@@ -34,7 +34,7 @@
     "prepare": "husky install && npm run build && npm run docs"
   },
   "devDependencies": {
-    "@microsoft/api-documenter": "^7.13.47",
+    "@microsoft/api-documenter": "^7.13.54",
     "@microsoft/api-extractor": "^7.18.7",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.9.1",
